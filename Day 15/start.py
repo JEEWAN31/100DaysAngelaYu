@@ -30,3 +30,20 @@ resources = {
     "coffee": 100,
 }
 
+
+class car:
+    def __init__(self, wheel, steer, body):
+        self.wheel = wheel
+        self.steer = steer
+        self.body = body
+
+    def __str__(self):
+        print(f"My car has {self.wheel}, and {self.steer} with a {self.body} body type")
+
+
+class new:
+    pass
+
+# PascalCaseing
+# camelCasing
+# sanke_casing

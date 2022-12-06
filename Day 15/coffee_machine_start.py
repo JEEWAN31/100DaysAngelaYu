@@ -1,3 +1,5 @@
+# Procerdural Programming is here to write all of the program which makes the file a lot more hectic and hard top follow all the instruction
+
 # TODO 1. Print report of all the coffes availabale
 # TODO 2. Ask user what would they like to take
 # TODO 3. turn machine off if they dont want anything from you
