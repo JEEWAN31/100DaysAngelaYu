@@ -25,6 +25,7 @@ class car:
         self.wheel = wheel
         self.steer = steer
         self.body = body
+        self.followers = 0       # this is a auto updated value
 
     def __str__(self):
         print(f"My car has {self.wheel}, and {self.steer} with a {self.body} body type")
