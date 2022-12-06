@@ -4,7 +4,8 @@ enemies = 1
 
 
 def increase_enemies():
-    enemies = 2
+    global enemies
+    enemies += 2
     print(f"enemies inside function: {enemies}")
 
 
@@ -19,6 +20,7 @@ def drink_potion():
     print(potion_strength)
 
 
+potion_strength = 1
 drink_potion()
 print(potion_strength)
 
@@ -41,12 +43,11 @@ print(player_health)
 game_level = 3
 
 
-def create_enemy():
-    enemies = ["Skeleton", "Zombie", "Alien"]
-    if game_level < 5:
-        new_enemy = enemies[0]
+enemies = ["Skeleton", "Zombie", "Alien"]
+if game_level < 5:
+    new_enemy = enemies[0]
 
-    print(new_enemy)
+print(new_enemy)
 
 
 # Modifying Global Scope
