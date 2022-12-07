@@ -1,5 +1,5 @@
 from turtle import Turtle, Screen
-from prettytable import  PrettyTable
+from prettytable import PrettyTable
 
 pt = PrettyTable()
 pt.add_column("city_name",["Mumbai", "Delhi", "Kolkata", "Banglore", "Chennai"])
