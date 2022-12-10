@@ -5,7 +5,7 @@ response = requests.get("https://news.ycombinator.com/from?site=github.com/getla
 yc_webpage = response.text
 
 soup = BeautifulSoup(yc_webpage, "html.parser")
-x = soup.find_all(name="span", class_="titleline")
+x = soup.find_all(name="a", class_="titleline")
 
 article_text = []
 article_link = []
