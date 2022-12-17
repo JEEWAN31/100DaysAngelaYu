@@ -5,22 +5,21 @@ response = requests.get("https://news.ycombinator.com/from?site=github.com/getla
 yc_webpage = response.text
 
 soup = BeautifulSoup(yc_webpage, "html.parser")
-x = soup.find_all(name="a", class_="titleline")
-
-article_text = []
-article_link = []
+x = soup.find_all( name="td", class_="title")
 for y in x:
-    x_text = y.getText()
-    article_text.append(x_text)
-    x_link = y.get("href")
-    article_link.append(x_link)
+    print(y)
 
-print(article_link)
-print(article_text)
-# upvotes = soup.find(name="span", class="score").get_text()
-
-
-
+#
+# article_text = []
+# article_link = []
+# for y in x:
+#     x_text = y.getText()
+#     article_text.append(x_text)
+#     x_link = y.get("href")
+#     article_link.append(x_link)
+#
+# print(article_link)
+# print(article_text)
 
 
 
